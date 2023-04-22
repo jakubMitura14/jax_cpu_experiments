@@ -17,6 +17,9 @@ RUN apt-get update \
 # [Optional] If your pip requirements rarely change, uncomment this section to add them to the image.
 # COPY requirements.txt /tmp/pip-tmp/
 RUN pip3 --disable-pip-version-check --no-cache-dir install pip install "jax[cpu]" 
+
+
+
 RUN pip3 install numpy \
         h5py \
         SimpleITK \
@@ -33,6 +36,9 @@ RUN pip3 install einops \
         optax \
         ml_collections
 RUN pip3 --disable-pip-version-check --no-cache-dir install pip install flax
+
+RUN pip3 --disable-pip-version-check --no-cache-dir  install jraph
+RUN pip3 --disable-pip-version-check --no-cache-dir  install numpyro[cpu]
 
 
 
