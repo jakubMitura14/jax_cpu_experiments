@@ -39,7 +39,7 @@ RUN pip3 --disable-pip-version-check --no-cache-dir install pip install flax
 
 RUN pip3 --disable-pip-version-check --no-cache-dir  install jraph
 RUN pip3 --disable-pip-version-check --no-cache-dir  install numpyro[cpu]
-
+RUN pip3 --disable-pip-version-check --no-cache-dir  install  seaborn
 
 
 
